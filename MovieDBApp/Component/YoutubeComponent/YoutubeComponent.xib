@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4144" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoutubeComponent" customModule="MovieApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="qAh-ca-lj9" id="odf-te-XCw"/>
+                <outlet property="imgPlay" destination="1A7-Tj-8vk" id="tlC-8X-1is"/>
+                <outlet property="imgYoutubevideo" destination="0f1-sd-wP3" id="NN0-F6-fIQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qAh-ca-lj9">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0f1-sd-wP3">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YoutubeButton" translatesAutoresizingMaskIntoConstraints="NO" id="1A7-Tj-8vk">
+                    <rect key="frame" x="45" y="53.5" width="60" height="43.5"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1A7-Tj-8vk" firstAttribute="width" secondItem="0f1-sd-wP3" secondAttribute="width" multiplier="2:5" id="6zD-XS-wVk"/>
+                <constraint firstItem="0f1-sd-wP3" firstAttribute="top" secondItem="HHn-cj-Cb9" secondAttribute="top" id="9d0-em-sH7"/>
+                <constraint firstItem="0f1-sd-wP3" firstAttribute="leading" secondItem="HHn-cj-Cb9" secondAttribute="leading" id="BKw-XR-Cq8"/>
+                <constraint firstItem="1A7-Tj-8vk" firstAttribute="height" secondItem="0f1-sd-wP3" secondAttribute="height" multiplier="0.29" id="DBY-PF-LHC"/>
+                <constraint firstItem="1A7-Tj-8vk" firstAttribute="centerX" secondItem="0f1-sd-wP3" secondAttribute="centerX" id="IBV-xG-fJb"/>
+                <constraint firstItem="0f1-sd-wP3" firstAttribute="trailing" secondItem="HHn-cj-Cb9" secondAttribute="trailing" id="Luh-52-Phc"/>
+                <constraint firstItem="1A7-Tj-8vk" firstAttribute="centerY" secondItem="0f1-sd-wP3" secondAttribute="centerY" id="XoK-4C-iHC"/>
+                <constraint firstItem="0f1-sd-wP3" firstAttribute="bottom" secondItem="HHn-cj-Cb9" secondAttribute="bottom" id="zbz-T2-XUX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="HHn-cj-Cb9"/>
+            <point key="canvasLocation" x="72" y="13"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="YoutubeButton" width="80" height="58"/>
+    </resources>
+</document>

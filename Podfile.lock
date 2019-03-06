@@ -1,0 +1,65 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Cosmos (18.0.1)
+  - MRProgress (0.8.3):
+    - MRProgress/ActivityIndicator (= 0.8.3)
+    - MRProgress/Blur (= 0.8.3)
+    - MRProgress/Circular (= 0.8.3)
+    - MRProgress/Icons (= 0.8.3)
+    - MRProgress/NavigationBarProgress (= 0.8.3)
+    - MRProgress/Overlay (= 0.8.3)
+  - MRProgress/ActivityIndicator (0.8.3):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.3):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.3):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.3)
+  - MRProgress/Icons (0.8.3)
+  - MRProgress/NavigationBarProgress (0.8.3):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.3):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.3)
+  - MRProgress/Stopable (0.8.3):
+    - MRProgress/Helper
+  - ReachabilitySwift (4.3.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - XCDYouTubeKit (2.7.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos
+  - MRProgress
+  - ReachabilitySwift
+  - SDWebImage
+  - XCDYouTubeKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Cosmos
+    - MRProgress
+    - ReachabilitySwift
+    - SDWebImage
+    - XCDYouTubeKit
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Cosmos: 7dfaa3f52584ca5f94ab74b5c2e264019cc9f7f5
+  MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  XCDYouTubeKit: 3f4fd3eb3ed494a46a8f007b91315eed6dd6df1f
+
+PODFILE CHECKSUM: 80992a85d258490b60a9c9e5ca6a0b5f72e47d55
+
+COCOAPODS: 1.6.1
