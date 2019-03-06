@@ -11,25 +11,25 @@ import UIKit
 class MovieDetails : Codable {
     
     var id: Int64
-    var imdbID: String
+    var imdbID: String?
     var adult: Bool
     var backdropPath: String?
     var budget: Decimal
     var genres: [Genres]
     var homepage: String?
-    var originalLanguage: String
-    var originalTitle: String
-    var overview : String
+    var originalLanguage: String?
+    var originalTitle: String?
+    var overview : String?
     var popularity: Decimal
     var posterPath: String?
     var productionCompanies: [Company]
     var productionCountries: [Country]
-    var releaseDate : String
+    var releaseDate : String?
     var revenue : Decimal
-    var runtime : Int
+    var runtime : Int?
     var spokenLanguages: [Language]
-    var status: String
-    var tagline: String
+    var status: String?
+    var tagline: String?
     var title: String
     var video: Bool
     var voteAverage: Double

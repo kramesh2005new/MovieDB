@@ -165,7 +165,7 @@ extension MovieDetailsViewController: UICollectionViewDelegate, UICollectionView
         {
             if  self.mdDataModel.movieCredits != nil
             {
-                return (self.mdDataModel.movieCredits?.crew.count)!
+                return (self.mdDataModel.movieCredits?.cast.count)!
             }
             else
             {

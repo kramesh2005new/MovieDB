@@ -54,6 +54,9 @@ class MovieListViewController: BaseViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
 
     /*
     // MARK: - Navigation

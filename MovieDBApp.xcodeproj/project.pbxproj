@@ -807,15 +807,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB062808F97AD99A4EA25D6B /* Pods-MovieDBApp.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57DYF3PP5X;
+				DEVELOPMENT_TEAM = 656P9X4WBR;
 				INFOPLIST_FILE = MovieDBApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Ramesh.MovieDBApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Ramesh.MovieDBAppPer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -826,15 +826,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2AE08E19121A744124FCB8AB /* Pods-MovieDBApp.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57DYF3PP5X;
+				DEVELOPMENT_TEAM = 656P9X4WBR;
 				INFOPLIST_FILE = MovieDBApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Ramesh.MovieDBApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Ramesh.MovieDBAppPer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

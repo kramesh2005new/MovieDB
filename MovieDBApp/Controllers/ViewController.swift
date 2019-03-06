@@ -19,19 +19,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     @IBAction func buttNowPlaying_TouchDown(_ sender: Any) {
         
         self.moveToMovieListScreen(movieType: .NOW_PLAYING)
-        //
-        //        showLoading()
-        //
-        
-        //        apiClient.fetchMovieDetails(movieID: "399579") { (movieDet, error) in
-        //
-        //            let movieDetails = movieDet
-        //
-        //        }
-        
         
     }
     
