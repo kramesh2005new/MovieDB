@@ -13,7 +13,7 @@ class BaseViewController: UIViewController {
     
     let appdelegate =  UIApplication.shared.delegate as! AppDelegate
     //var overlay : MRProgressOverlayView!
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +34,15 @@ class BaseViewController: UIViewController {
     func showLoading()
     {
      
-        MRProgressOverlayView.showOverlayAdded(to: self.appdelegate.window, title: "Loading...", mode: .indeterminateSmall, animated: true)
+        let overlay = MRProgressOverlayView.showOverlayAdded(to: self.appdelegate.window, animated: true)
+
+        overlay!.mode = .indeterminateSmall
+        
+        overlay!.tintColor = UIColor.init(red: 7/255, green: 28/255, blue: 36/255, alpha: 1)
+        
+        overlay!.titleLabelText = "Loading..."
+        
+        overlay!.titleLabel.superview?.backgroundColor =  UIColor.init(red: 1/255, green: 209/255, blue: 119/255, alpha: 1)
         
     }
     

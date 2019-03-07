@@ -37,6 +37,7 @@
 		0C146C3C222FE4B8000DF706 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C146C39222FE4B8000DF706 /* BaseViewController.swift */; };
 		0C146C3D222FE4B8000DF706 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C146C3A222FE4B8000DF706 /* MovieListViewController.swift */; };
 		0C146C4122300B5A000DF706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C146C4022300B5A000DF706 /* Assets.xcassets */; };
+		0C19C6B22230F1E1008A1660 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0C19C6B12230F1E1008A1660 /* loader.gif */; };
 		4B6F5A28F21FC877ECC34B56 /* Pods_MovieDBAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893155E8FB80EF7804653544 /* Pods_MovieDBAppUITests.framework */; };
 		5370AEB12806AC672BF9DB20 /* Pods_MovieDBApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A7E65A575CE857223250A5 /* Pods_MovieDBApp.framework */; };
 		984278048B1E2142162A56CA /* Pods_MovieDBAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EF5D96FBA133BAE46DE5D /* Pods_MovieDBAppTests.framework */; };
@@ -97,6 +98,7 @@
 		0C146C39222FE4B8000DF706 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0C146C3A222FE4B8000DF706 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		0C146C4022300B5A000DF706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C19C6B12230F1E1008A1660 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
 		2AE08E19121A744124FCB8AB /* Pods-MovieDBApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBApp.release.xcconfig"; path = "Target Support Files/Pods-MovieDBApp/Pods-MovieDBApp.release.xcconfig"; sourceTree = "<group>"; };
 		4DB8F3E488482AC597A86287 /* Pods-MovieDBAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBAppTests.release.xcconfig"; path = "Target Support Files/Pods-MovieDBAppTests/Pods-MovieDBAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		58A7E65A575CE857223250A5 /* Pods_MovieDBApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +170,7 @@
 				0C146C09222FE310000DF706 /* Storyboards */,
 				0C146C07222FE2FA000DF706 /* Controllers */,
 				0C146C4022300B5A000DF706 /* Assets.xcassets */,
+				0C19C6B12230F1E1008A1660 /* loader.gif */,
 				0C146BD9222FE257000DF706 /* AppDelegate.swift */,
 				0C146BE5222FE259000DF706 /* Info.plist */,
 			);
@@ -419,6 +422,7 @@
 				0C146BE4222FE259000DF706 /* LaunchScreen.storyboard in Resources */,
 				0C146C13222FE402000DF706 /* YoutubeComponent.xib in Resources */,
 				0C146C4122300B5A000DF706 /* Assets.xcassets in Resources */,
+				0C19C6B22230F1E1008A1660 /* loader.gif in Resources */,
 				0C146BDF222FE257000DF706 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -809,13 +813,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 656P9X4WBR;
+				DEVELOPMENT_TEAM = 57DYF3PP5X;
 				INFOPLIST_FILE = MovieDBApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Ramesh.MovieDBAppPer;
+				PRODUCT_BUNDLE_IDENTIFIER = Ramesh.MovieDBApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -828,13 +832,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 656P9X4WBR;
+				DEVELOPMENT_TEAM = 57DYF3PP5X;
 				INFOPLIST_FILE = MovieDBApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Ramesh.MovieDBAppPer;
+				PRODUCT_BUNDLE_IDENTIFIER = Ramesh.MovieDBApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

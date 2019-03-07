@@ -102,17 +102,50 @@ class MovieDetailsViewController: BaseViewController, UIGestureRecognizerDelegat
         
         self.title = self.mdDataModel.movieDetails?.title
         
-        self.labTitle.text = (self.mdDataModel.movieDetails?.title)! //+ "\n"
-        self.labReleaseDate.text = (self.mdDataModel.movieDetails?.releaseDate)! //+ "\n"
-        self.labRunningTime.text = "\(self.mdDataModel.movieDetails?.runtime ?? 0)"  //\n
-        self.labGeneres.text = self.mdDataModel.genres // "Action, Comedy, Romantic, Horror, Thiriller, Science Fiction"
-        self.labLanguages.text = self.mdDataModel.languages // "English, Hindi, Tamil, Kannada, Telugu"
+        self.labTitle.text = (self.mdDataModel.movieDetails?.title)!
+        
+        if let strReleaseDate = self.mdDataModel.movieDetails?.releaseDate
+        {
+            
+            self.labReleaseDate.text = self.formatDate(dateStr: strReleaseDate)
+        }
+        else
+        {
+            self.labReleaseDate.text = ""
+        }
+        
+        self.labRunningTime.text = "\(self.mdDataModel.movieDetails?.runtime ?? 0)"
+        self.labGeneres.text = self.mdDataModel.genres
+        self.labLanguages.text = self.mdDataModel.languages
         
         self.ratingView.rating = (self.mdDataModel.movieDetails?.voteAverage)! / 2
         self.labVoteCount.text = "(\(self.mdDataModel.movieDetails?.voteCount ?? 0))"
         
         self.crewCollectionView.reloadData()
         
+    }
+    
+    func formatDate(dateStr: String) -> String
+    {
+        var dateFormatter : DateFormatter!
+        dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.timeZone = TimeZone.current
+        dateFormatter.locale = Locale.current
+        
+        if let releaseDate = dateFormatter.date(from: dateStr)
+        {
+            var dateFormatterToStr : DateFormatter!
+            dateFormatterToStr = DateFormatter()
+            dateFormatterToStr.dateFormat = "dd/MM/yyyy"
+            dateFormatterToStr.timeZone = TimeZone.current
+            dateFormatterToStr.locale = Locale.current
+            
+            return dateFormatterToStr.string(from: releaseDate)
+        }
+        
+        
+        return ""
     }
     
      //MARK:- Swipe Gesture
