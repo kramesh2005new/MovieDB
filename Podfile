@@ -24,15 +24,17 @@ target 'MovieDBApp' do
     pod 'XCDYouTubeKit'
   end
 
-  target 'MovieDBAppUITests' do
-    inherit! :search_paths
-    # Pods for testing
-    pod 'Alamofire'
-    pod 'SDWebImage'
-    pod 'MRProgress'
-    pod 'ReachabilitySwift'
-    pod 'Cosmos'
-    pod 'XCDYouTubeKit'
-  end
+end
 
+
+target 'MovieDBAppUITests' do
+  inherit! :search_paths
+  # Pods for testing
+  
+  pod 'Alamofire'
+  pod 'SDWebImage'
+  pod 'MRProgress'
+  pod 'ReachabilitySwift'
+  pod 'Cosmos'
+  pod 'XCDYouTubeKit'
 end

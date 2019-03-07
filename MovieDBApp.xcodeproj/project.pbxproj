@@ -38,7 +38,10 @@
 		0C146C3D222FE4B8000DF706 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C146C3A222FE4B8000DF706 /* MovieListViewController.swift */; };
 		0C146C4122300B5A000DF706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C146C4022300B5A000DF706 /* Assets.xcassets */; };
 		0C19C6B22230F1E1008A1660 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0C19C6B12230F1E1008A1660 /* loader.gif */; };
-		4B6F5A28F21FC877ECC34B56 /* Pods_MovieDBAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893155E8FB80EF7804653544 /* Pods_MovieDBAppUITests.framework */; };
+		0C19C6B5223122CB008A1660 /* MovieListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C6B4223122CB008A1660 /* MovieListViewTests.swift */; };
+		0C19C6B722312B5D008A1660 /* MovieListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C6B622312B5D008A1660 /* MovieListViewTests.swift */; };
+		0C19C6B92231381A008A1660 /* MovieDetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C6B82231381A008A1660 /* MovieDetailsViewTests.swift */; };
+		3E4D4341768DD25DD3D3198D /* libPods-MovieDBAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 647A394C671E829EAEC36094 /* libPods-MovieDBAppUITests.a */; };
 		5370AEB12806AC672BF9DB20 /* Pods_MovieDBApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A7E65A575CE857223250A5 /* Pods_MovieDBApp.framework */; };
 		984278048B1E2142162A56CA /* Pods_MovieDBAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EF5D96FBA133BAE46DE5D /* Pods_MovieDBAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -99,11 +102,14 @@
 		0C146C3A222FE4B8000DF706 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		0C146C4022300B5A000DF706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C19C6B12230F1E1008A1660 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		0C19C6B4223122CB008A1660 /* MovieListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewTests.swift; sourceTree = "<group>"; };
+		0C19C6B622312B5D008A1660 /* MovieListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewTests.swift; sourceTree = "<group>"; };
+		0C19C6B82231381A008A1660 /* MovieDetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewTests.swift; sourceTree = "<group>"; };
 		2AE08E19121A744124FCB8AB /* Pods-MovieDBApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBApp.release.xcconfig"; path = "Target Support Files/Pods-MovieDBApp/Pods-MovieDBApp.release.xcconfig"; sourceTree = "<group>"; };
 		4DB8F3E488482AC597A86287 /* Pods-MovieDBAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBAppTests.release.xcconfig"; path = "Target Support Files/Pods-MovieDBAppTests/Pods-MovieDBAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		58A7E65A575CE857223250A5 /* Pods_MovieDBApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		647A394C671E829EAEC36094 /* libPods-MovieDBAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieDBAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5EF5D96FBA133BAE46DE5D /* Pods_MovieDBAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		893155E8FB80EF7804653544 /* Pods_MovieDBAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C9D32E636C3BF9A0EE83BC /* Pods-MovieDBAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MovieDBAppUITests/Pods-MovieDBAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F8460021D68033BBA495F143 /* Pods-MovieDBAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieDBAppTests/Pods-MovieDBAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB062808F97AD99A4EA25D6B /* Pods-MovieDBApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieDBApp/Pods-MovieDBApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B6F5A28F21FC877ECC34B56 /* Pods_MovieDBAppUITests.framework in Frameworks */,
+				3E4D4341768DD25DD3D3198D /* libPods-MovieDBAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +188,7 @@
 			children = (
 				0C146BEE222FE25A000DF706 /* MovieDBAppTests.swift */,
 				0C146BF0222FE25A000DF706 /* Info.plist */,
+				0C19C6B4223122CB008A1660 /* MovieListViewTests.swift */,
 			);
 			path = MovieDBAppTests;
 			sourceTree = "<group>";
@@ -191,6 +198,8 @@
 			children = (
 				0C146BF9222FE25A000DF706 /* MovieDBAppUITests.swift */,
 				0C146BFB222FE25A000DF706 /* Info.plist */,
+				0C19C6B622312B5D008A1660 /* MovieListViewTests.swift */,
+				0C19C6B82231381A008A1660 /* MovieDetailsViewTests.swift */,
 			);
 			path = MovieDBAppUITests;
 			sourceTree = "<group>";
@@ -304,7 +313,7 @@
 			children = (
 				58A7E65A575CE857223250A5 /* Pods_MovieDBApp.framework */,
 				6E5EF5D96FBA133BAE46DE5D /* Pods_MovieDBAppTests.framework */,
-				893155E8FB80EF7804653544 /* Pods_MovieDBAppUITests.framework */,
+				647A394C671E829EAEC36094 /* libPods-MovieDBAppUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -359,7 +368,6 @@
 				0C146BF1222FE25A000DF706 /* Sources */,
 				0C146BF2222FE25A000DF706 /* Frameworks */,
 				0C146BF3222FE25A000DF706 /* Resources */,
-				0866485A3823466933292A68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -444,38 +452,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0866485A3823466933292A68 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieDBAppUITests/Pods-MovieDBAppUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
-				"${BUILT_PRODUCTS_DIR}/MRProgress/MRProgress.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRProgress.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDYouTubeKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieDBAppUITests/Pods-MovieDBAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		255C186C8B83C8DFD485BE71 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,12 +461,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MovieDBApp/Pods-MovieDBApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
-				"${BUILT_PRODUCTS_DIR}/MRProgress/MRProgress.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos-framework/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/MRProgress-framework/MRProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift-framework/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit-framework/XCDYouTubeKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -561,12 +537,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MovieDBAppTests/Pods-MovieDBAppTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
-				"${BUILT_PRODUCTS_DIR}/MRProgress/MRProgress.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos-framework/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/MRProgress-framework/MRProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift-framework/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit-framework/XCDYouTubeKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -645,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C146BEF222FE25A000DF706 /* MovieDBAppTests.swift in Sources */,
+				0C19C6B5223122CB008A1660 /* MovieListViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +630,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C146BFA222FE25A000DF706 /* MovieDBAppUITests.swift in Sources */,
+				0C19C6B722312B5D008A1660 /* MovieListViewTests.swift in Sources */,
+				0C19C6B92231381A008A1660 /* MovieDetailsViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
