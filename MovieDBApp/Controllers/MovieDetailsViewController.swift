@@ -25,8 +25,6 @@ class MovieDetailsViewController: BaseViewController {
     
     let mdDataModel =  MovieDetailsViewModel()
     
-    let general = General()
-    
     var movie: Movie?
     
     var arrMovie: [Movie]?
@@ -106,16 +104,8 @@ class MovieDetailsViewController: BaseViewController {
         
         self.labTitle.text = (self.mdDataModel.movieDetails?.title)!
         
-        if let strReleaseDate = self.mdDataModel.movieDetails?.releaseDate
-        {
-            
-            self.labReleaseDate.text = general.formatDate(dateStr: strReleaseDate)
-        }
-        else
-        {
-            self.labReleaseDate.text = ""
-        }
-        
+        self.labReleaseDate.text =  self.mdDataModel.movieDetails?.releaseDate
+       
         self.labRunningTime.text = "\(self.mdDataModel.movieDetails?.runtime ?? 0)"
         self.labGeneres.text = self.mdDataModel.genres
         self.labLanguages.text = self.mdDataModel.languages

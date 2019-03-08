@@ -12,6 +12,8 @@ class MovieDetailsViewModel: NSObject {
     
     let apiClient = TheMovieDBAPIClient.shared
     
+    let general = General()
+    
     var movieDetails: MovieDetails?
     
     var movieCredits: MovieCredits?
@@ -36,6 +38,15 @@ class MovieDetailsViewModel: NSObject {
                 let arrGenres = (self.movieDetails?.genres)!.map{ $0.name}
                 
                 self.genres = arrGenres.joined(separator: ", ")
+                
+                if let strReleaseDate = self.movieDetails?.releaseDate
+                {
+                    self.movieDetails?.releaseDate = self.general.formatDate(dateStr: strReleaseDate)
+                }
+                else
+                {
+                    self.self.movieDetails?.releaseDate = ""
+                }
                 
                 self.getMovieCredits(movieID: movieID, completion: { (movieCredits) in
                     
