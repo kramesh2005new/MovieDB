@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C138C0822328E13004788B3 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C138C0722328E13004788B3 /* General.swift */; };
 		0C146BDA222FE257000DF706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C146BD9222FE257000DF706 /* AppDelegate.swift */; };
 		0C146BDC222FE257000DF706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C146BDB222FE257000DF706 /* ViewController.swift */; };
 		0C146BDF222FE257000DF706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C146BDD222FE257000DF706 /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		0AA5BE7265AB0D6678BE6693 /* Pods-MovieDBAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MovieDBAppUITests/Pods-MovieDBAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C138C0722328E13004788B3 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		0C146BD6222FE257000DF706 /* MovieDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C146BD9222FE257000DF706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C146BDB222FE257000DF706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C138C0622328DF2004788B3 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0C138C0722328E13004788B3 /* General.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		0C146BCD222FE257000DF706 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 		0C146BD8222FE257000DF706 /* MovieDBApp */ = {
 			isa = PBXGroup;
 			children = (
+				0C138C0622328DF2004788B3 /* Class */,
 				0C146C0E222FE351000DF706 /* Component */,
 				0C146C0D222FE347000DF706 /* Extensions */,
 				0C146C0C222FE33C000DF706 /* APIClient */,
@@ -608,6 +619,7 @@
 				0C146C25222FE43F000DF706 /* Country.swift in Sources */,
 				0C146C23222FE43F000DF706 /* MovieCredits.swift in Sources */,
 				0C146C3B222FE4B8000DF706 /* MovieDetailsViewController.swift in Sources */,
+				0C138C0822328E13004788B3 /* General.swift in Sources */,
 				0C146C12222FE402000DF706 /* YoutubeComponent.swift in Sources */,
 				0C146C27222FE43F000DF706 /* MovieList.swift in Sources */,
 				0C146C35222FE499000DF706 /* MovieVideoCollectionViewCell.swift in Sources */,
@@ -794,6 +806,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57DYF3PP5X;
 				INFOPLIST_FILE = MovieDBApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -813,6 +826,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57DYF3PP5X;
 				INFOPLIST_FILE = MovieDBApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

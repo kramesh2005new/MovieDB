@@ -10,7 +10,7 @@ import UIKit
 import SDWebImage
 import Cosmos
 
-class MovieDetailsViewController: BaseViewController, UIGestureRecognizerDelegate {
+class MovieDetailsViewController: BaseViewController {
     
     @IBOutlet weak var imgMoviePoster: UIImageView!
     @IBOutlet weak var labTitle: UILabel!
@@ -24,6 +24,8 @@ class MovieDetailsViewController: BaseViewController, UIGestureRecognizerDelegat
     @IBOutlet weak var movieVideoCollectionView: UICollectionView!
     
     let mdDataModel =  MovieDetailsViewModel()
+    
+    let general = General()
     
     var movie: Movie?
     
@@ -107,7 +109,7 @@ class MovieDetailsViewController: BaseViewController, UIGestureRecognizerDelegat
         if let strReleaseDate = self.mdDataModel.movieDetails?.releaseDate
         {
             
-            self.labReleaseDate.text = self.formatDate(dateStr: strReleaseDate)
+            self.labReleaseDate.text = general.formatDate(dateStr: strReleaseDate)
         }
         else
         {
@@ -125,30 +127,11 @@ class MovieDetailsViewController: BaseViewController, UIGestureRecognizerDelegat
         
     }
     
-    func formatDate(dateStr: String) -> String
-    {
-        var dateFormatter : DateFormatter!
-        dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        dateFormatter.timeZone = TimeZone.current
-        dateFormatter.locale = Locale.current
-        
-        if let releaseDate = dateFormatter.date(from: dateStr)
-        {
-            var dateFormatterToStr : DateFormatter!
-            dateFormatterToStr = DateFormatter()
-            dateFormatterToStr.dateFormat = "dd/MM/yyyy"
-            dateFormatterToStr.timeZone = TimeZone.current
-            dateFormatterToStr.locale = Locale.current
-            
-            return dateFormatterToStr.string(from: releaseDate)
-        }
-        
-        
-        return ""
-    }
-    
-     //MARK:- Swipe Gesture
+}
+
+extension MovieDetailsViewController: UIGestureRecognizerDelegate
+{
+    //MARK:- Swipe Gesture
     
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
